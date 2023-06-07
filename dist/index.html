@@ -12,17 +12,15 @@
   console.log("hello world");
   document.getElementById("textHead1").innerHTML = "My notebook";
 }</script>
-  <textarea id="myTextarea"></textarea>
+  <textarea id="textarea1"></textarea>
   <button id="add-data" onclick="addItem()">Add Item</button>
-  <ul id="myList"></ul>
+  <ul id="list1"></ul>
   <script>function addItem() {
-  var text = document.getElementById("myTextarea").value;
-  if (text) {
-    var li = document.createElement("li");
-    li.textContent = text;
-    document.getElementById("myList").appendChild(li);
-    textarea.value = "";
-  }
+  var text = document.getElementById("textarea1").value;
+  var li = document.createElement("li");
+  li.textContent = text;
+  document.getElementById("list1").appendChild(li);
+  textarea.value = "";
 }</script>
   <ul></ul>
   </body>

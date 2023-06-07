@@ -14,18 +14,16 @@
   document.getElementById("textHead1").innerHTML = "My notebook";
   }
   </script>
-  <textarea id="myTextarea"></textarea>
+  <textarea id="textarea1"></textarea>
   <button id="add-data" onclick="addItem()">Add Item</button>
-  <ul id="myList"></ul>
+  <ul id="list1"></ul>
   <script>
     function addItem() {
-      let text = document.getElementById("myTextarea").value;
-      if (text) {
+      let text = document.getElementById("textarea1").value;
       let li = document.createElement("li");
       li.textContent = text;
-      document.getElementById("myList").appendChild(li);
+      document.getElementById("list1").appendChild(li);
       textarea.value = "";
-        }
       }
     </script>
   <ul></ul>
