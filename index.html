@@ -20,12 +20,9 @@
   <script>
     function addItem() {
       let text = document.getElementById("textarea1").value;
-        if (text) {
-          var li = document.createElement("li");
-          li.textContent = text;
-          document.getElementById("list1").appendChild(li);
-          document.getElementById("textarea1").value = "";
-          }
+      let li = document.createElement("li");
+      li.innerHTML = text;
+      document.getElementById("list1").appendChild(li);
       }
     </script>
   <ul></ul>
