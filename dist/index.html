@@ -17,10 +17,12 @@
   <ul id="list1"></ul>
   <script>function addItem() {
   var text = document.getElementById("textarea1").value;
-  var li = document.createElement("li");
-  li.textContent = text;
-  document.getElementById("list1").appendChild(li);
-  document.getElementById("textarea1").value = "";
+  if (text) {
+    var li = document.createElement("li");
+    li.innerHTML = text;
+    document.getElementById("list1").appendChild(li);
+    document.getElementById("textarea1").value = "";
+  }
 }</script>
   <ul></ul>
   </body>
