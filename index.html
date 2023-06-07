@@ -13,15 +13,19 @@
   console.log("hello world");
   document.getElementById("textHead1").innerHTML = "My notebook";
   }
-</script>
-<ul id="myList"></ul>
-    <button id="add-data" onclick="addListItem()">Add Item</button>
-
-    <script>
-      function addListItem() {
-        let li = document.createElement("li");
-        li.textContent = "Arbitrary Text";
-        document.getElementById("myList").appendChild(li);
+  </script>
+  <textarea id="myTextarea"></textarea>
+  <button id="add-data" onclick="addItem()">Add Item</button>
+  <ul id="myList"></ul>
+  <script>
+    function addItem() {
+      let text = document.getElementById("myTextarea").value;
+      if (text) {
+      let li = document.createElement("li");
+      li.textContent = text;
+      document.getElementById("myList").appendChild(li);
+      textarea.value = "";
+        }
       }
     </script>
   <ul></ul>
