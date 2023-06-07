@@ -14,5 +14,16 @@
   document.getElementById("textHead1").innerHTML = "My notebook";
   }
 </script>
+<ul id="myList"></ul>
+    <button id="add-data" onclick="addListItem()">Add Item</button>
+
+    <script>
+      function addListItem() {
+        let li = document.createElement("li");
+        li.textContent = "Arbitrary Text";
+        document.getElementById("myList").appendChild(li);
+      }
+    </script>
+  <ul></ul>
   </body>
 </html>
